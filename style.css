@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+}
+.space {
+    background: url("space.png");
+    position: relative;
+}
+.planet-area {
+    position: relative;
+    bottom: -2px;
+    left: -2px;
+}
+.planet {
+    position: relative;
+    z-index: 2;
+}
+.rocket {
+    position: relative;
+    bottom: 350px;
+    left: -450px;
+    transform: rotate(40deg);
+    z-index: 3;
+}
+.control-panel {
+    position: absolute;
+    bottom: 150px;
+    right: 150px;
+    height: 450px;
+    width: 700px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5ff00;
+    opacity: 1;
+    background: repeating-linear-gradient( 45deg, #000000, #000000 6px, #f5ff00 6px, #f5ff00 30px );
+}
+.control-panel__inner {
+    height: 400px;
+    width: 650px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+}
+.control-panel__inner input[type="password"] {
+    border: 2px solid #F5FF00FF;
+    background: #222;
+    color: #F5FF00FF;
+}
+.control-panel__inner input[value="ok"] {
+    background: #222;
+    border: 2px solid #F5FF00FF;
+    border-radius: 8px;
+    color: #F5FF00FF;
+    margin-left: 5px;
+}
+.control-panel__inner input[value="launch"] {
+    background: crimson;
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 45%;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.check-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 87px;
+}
+.levers {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.rotated {
+    display: block;
+    transform: rotate(-90deg);
+}
+
